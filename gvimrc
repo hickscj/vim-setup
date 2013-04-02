@@ -6,6 +6,8 @@
 call pathogen#incubate()
 call pathogen#helptags()
 
+set runtimepath+=~/.vim/bundle/ultisnips
+
 " Enable filetypes
 filetype on
 filetype plugin on
