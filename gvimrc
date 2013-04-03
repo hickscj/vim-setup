@@ -1,11 +1,12 @@
 " .gvimrc File
-" Curated by Chad Hicks
+" Collected by Chad Hicks
 " A slowly growing collection of useful settings
 
 " Pathogen!
 call pathogen#incubate()
 call pathogen#helptags()
 
+" Add in UltiSnips
 set runtimepath+=~/.vim/bundle/ultisnips
 
 " Enable filetypes
@@ -13,20 +14,31 @@ filetype on
 filetype plugin on
 filetype indent on
 
+" Reaching for esc is dumb
 map! ;; <Esc> " map ;; to Esc
+
+" Linebreak at 500 char
+set lbr
+set tw=500
+
+" Full screen!
+set fu
+
+" Turn backup off, since most stuff is in SVN, git et.c anyway...
+set nobackup
+set nowb
+set noswapfile
+
+" Auto indent
+set ai
+
+" Give the cursor 7 lines of space
+set so=7
 
 syntax on
 
 " Display current cursor position in lower right corner
 set ruler
-
-if filereadable(expand("~/.gvimrc.before"))
-  source ~/.gvimrc.before
-endif
-
-if filereadable(expand("~/.gvimrc.after"))
-  source ~/.gvimrc.after
-endif
 
 " Don't show the tab bar
 set guioptions-=T
