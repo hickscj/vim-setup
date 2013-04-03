@@ -14,15 +14,15 @@ filetype on
 filetype plugin on
 filetype indent on
 
-" Reaching for esc is dumb
-map! ;; <Esc> " map ;; to Esc
+" Reaching for esc is dumb; map ;; to Esc
+map! ;; <Esc> 
 
 " Linebreak at 500 char
 set lbr
 set tw=500
 
 " Full screen!
-set fu
+" set fu
 
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
 set nobackup
