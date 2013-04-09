@@ -3,3 +3,5 @@
 
 execute pathogen#infect()
 
+" PHP syntax test (build)
+map <C-B> :!php -l %<CR>
