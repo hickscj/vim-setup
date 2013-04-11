@@ -5,3 +5,7 @@ execute pathogen#infect()
 
 " PHP syntax test (build)
 map <C-B> :!php -l %<CR>
+
+" preserve folds
+au BufWinLeave ?* mkview
+au BufWinEnter ?* silent loadview
