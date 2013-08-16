@@ -18,8 +18,8 @@ filetype indent on
 map! ;; <Esc> 
 
 " Linebreak at 500 char
-set lbr
-set tw=500
+"set lbr
+"set tw=500
 
 " Full screen!
 " set fu
@@ -51,16 +51,17 @@ set guifont=Courier:h14
 
 set transparency=3
 set lines=50
-set columns=100
+set columns=150
+set foldcolumn=1
 set cursorline
 set number
 set smartindent
 set autoindent
 
 " Tabs
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 
 " Search settings
 set incsearch

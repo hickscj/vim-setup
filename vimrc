@@ -8,6 +8,9 @@ call pathogen#incubate()
 " PHP syntax test (build)
 map <C-B> :!php -l %<CR>
 
+" remap the leader
+let mapleader=","
+
 " preserve folds
 au BufWinLeave ?* mkview
 au BufWinEnter ?* silent loadview
