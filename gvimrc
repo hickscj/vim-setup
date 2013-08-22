@@ -44,12 +44,12 @@ set ruler
 set guioptions-=T
 
 " Set default colorscheme
-colorscheme desert
+colorscheme badwolf
 
 " Font and size
 set guifont=Courier:h14
 
-set transparency=3
+set transparency=2
 set lines=50
 set columns=150
 set foldcolumn=1

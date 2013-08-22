@@ -33,7 +33,7 @@ setlocal noexpandtab
 if &filetype != 'html'
 setlocal filetype=html
 endif
-setlocal foldcolumn=0
+setlocal foldcolumn=1
 setlocal foldenable
 setlocal foldexpr=0
 setlocal foldignore=#
@@ -102,15 +102,23 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-19,43fold
-19
+11,17fold
+19,49fold
+51,60fold
+62,79fold
+81,115fold
+117,143fold
+11
 normal! zo
-let s:l = 23 - ((22 * winheight(0) + 32) / 65)
+81
+normal! zo
+let s:l = 85 - ((84 * winheight(0) + 32) / 65)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-23
-normal! 04l
+85
+normal! 023l
+lcd ~/Sites
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost
 " vim: set ft=vim :
