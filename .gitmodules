@@ -4,3 +4,30 @@
 [submodule "bundle/ack"]
 	path = bundle/ack
 	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/MatchTag"]
+  path = bundle/MatchTag
+  url = https://github.com/gregsexton/MatchTag.git
+[submodule "bundle/jshint2.vim"]
+  path = bundle/jshint2.vim
+  url = https://github.com/Shutnik/jshint2.vim.git
+[submodule "bundle/jslint.vim"]
+  path = bundle/jslint.vim
+  url = https://github.com/hallettj/jslint.vim.git
+[submodule "bundle/nerdcommenter"]
+  path = bundle/nerdcommenter
+  url = https://github.com/scrooloose/nerdcommenter.git
+[submodule "bundle/vim-colorschemes"]
+  path = bundle/vim-colorschemes
+  url = https://github.com/flazz/vim-colorschemes.git
+[submodule "bundle/vim-indent-guides"]
+  path = bundle/vim-indent-guides
+  url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "bundle/vim-multiple-cursors"]
+  path = bundle/vim-multiple-cursors
+  url = https://github.com/terryma/vim-multiple-cursors.git
+[submodule "bundle/zencoding-vim"]
+  path = bundle/zencoding-vim
+  url = https://github.com/mattn/emmet-vim.git
+# [submodule "bundle/vim-colorschemes"]
+#   path = bundle/vim-colorschemes
+#   url = https://github.com/flazz/vim-colorschemes.git

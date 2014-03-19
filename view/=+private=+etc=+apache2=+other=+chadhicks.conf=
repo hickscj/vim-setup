@@ -1,6 +1,6 @@
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 argglobal
-setlocal autoindent
+setlocal noautoindent
 setlocal nobinary
 setlocal bufhidden=
 setlocal buflisted
@@ -18,17 +18,17 @@ setlocal nocopyindent
 setlocal cryptmethod=
 setlocal nocursorbind
 setlocal nocursorcolumn
-setlocal cursorline
+setlocal nocursorline
 setlocal define=
 setlocal dictionary=
 setlocal nodiff
 setlocal equalprg=
 setlocal errorformat=
 setlocal noexpandtab
-if &filetype != 'apache'
-setlocal filetype=apache
+if &filetype != ''
+setlocal filetype=
 endif
-setlocal foldcolumn=1
+setlocal foldcolumn=0
 setlocal foldenable
 setlocal foldexpr=0
 setlocal foldignore=#
@@ -56,10 +56,10 @@ setlocal nolisp
 setlocal nolist
 setlocal makeprg=
 setlocal matchpairs=(:),{:},[:]
-setlocal modeline
+setlocal nomodeline
 setlocal modifiable
 setlocal nrformats=octal,hex
-setlocal number
+setlocal nonumber
 setlocal numberwidth=4
 setlocal omnifunc=
 setlocal path=
@@ -69,22 +69,22 @@ setlocal quoteescape=\\
 setlocal noreadonly
 setlocal norelativenumber
 setlocal noscrollbind
-setlocal shiftwidth=2
+setlocal shiftwidth=8
 setlocal noshortname
-setlocal smartindent
-setlocal softtabstop=2
+setlocal nosmartindent
+setlocal softtabstop=0
 setlocal nospell
 setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
 setlocal spellfile=
 setlocal spelllang=en
 setlocal statusline=
 setlocal suffixesadd=
-setlocal noswapfile
+setlocal swapfile
 setlocal synmaxcol=3000
-if &syntax != 'apache'
-setlocal syntax=apache
+if &syntax != ''
+setlocal syntax=
 endif
-setlocal tabstop=2
+setlocal tabstop=8
 setlocal tags=
 setlocal textwidth=0
 setlocal thesaurus=
@@ -94,12 +94,12 @@ setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 500 - ((69 * winheight(0) + 35) / 70)
+let s:l = 5 - ((3 * winheight(0) + 27) / 54)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-500
-normal! 029l
+5
+normal! 010l
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost
 " vim: set ft=vim :
