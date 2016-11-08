@@ -1,0 +1,45 @@
+" some good starter vim settings
+
+syntax on
+
+filetype on
+filetype plugin on
+filetype indent on
+
+set cursorline
+set fileformat=unix
+set fileformats=unix,dos
+
+set number
+set nowrap
+set nobackup
+set nowritebackup
+set noswapfile
+set foldcolumn=1
+set so=7
+set backspace=indent,eol,start
+set showcmd
+set wildmenu
+set wildignore+=*/target/*,*.so,*.swp,*.zip,*/bower_components/*,*/node_modules/*
+set modelines=0
+
+" tabs
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+" search
+set incsearch
+set hlsearch
+set ignorecase
+set smartcase
+
+set laststatus=2
+set linespace=2
+
+set statusline=%F%m%r%h%w\ [%{&ff}]\ [%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%03v]\ [%p%%]\ [LEN=%L]
+
+" comma is a nice leader
+let mapleader=","
+
