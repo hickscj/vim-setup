@@ -12,4 +12,5 @@ Create symlinks:
 
 Install plugins with Vundle:
 
-    `:PluginInstall`   
+    :PluginInstall
+
